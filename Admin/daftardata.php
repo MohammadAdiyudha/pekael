@@ -84,7 +84,6 @@
                                 <hr>
                             <a href="tolak.php?id=<?= $row["id"];?>">Tolak</a>
                         </td>
-                        <!-- <td class="align-middle text-center"><img src="../img/<?= $row["gambar"];?>" width="50px"></td> -->
                         <td class="align-middle"><a href="../file/<?= $row["surat"]; ?>" download>Download</a></td>
                         <td class="align-middle"><?= $row["nama"]; ?></td>
                         <td class="align-middle"><?= $row["tgl_mulai"]; ?></td>
