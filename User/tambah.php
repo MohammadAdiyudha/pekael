@@ -41,7 +41,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tambah Data Mahasiswa</title>
+    <title>Tambah Data PKL</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/logo.ico" type="image/ico">
@@ -63,14 +63,14 @@
             <h4>Navigasi</h4>
             <a href="dashboard.php">Dashboard</a>
             <a href="tambah.php" class="active">Daftar PKL</a>
-            <a href="daftardata.php">Hasil</a>
+            <a href="daftardata.php">List Data</a>
             <a href="../akun/logout.php">Logout</a>
         </div>
     </div>
 
     <!-- Page Content -->
     <div class="main text-justify">
-        <h3 class="font-weight-bold">Tambah data mahasiswa</h3>
+        <h3 class="font-weight-bold">Tambah Data PKL</h3>
         <br>
         <!-- Enctype untuk mengelola banyak jenis superglobal ($_POST dan $_FILE)-->
         <form action="" method="post" enctype="multipart/form-data">
@@ -89,7 +89,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6 mb-3"> 
-                    <label for="pendidikan">Pendidikan : </label>
+                    <label for="pendidikan">Instansi Pendidikan : </label>
                     <input type="text" name="pendidikan" id="pendidikan" class="form-control" required>
                 </div>   
 
@@ -103,8 +103,8 @@
                 <div class="form-group col-md-6 mb-3">
                     <!-- <label for="jurusan">Jurusan : </label>
                     <input type="text" name="jurusan" id="jurusan" required> -->
-                    <label for="referral">Referral : </label>
-                    <input type="text" name="referral" id="referral" class="form-control" required>
+                    <label for="referral">Referral (Opsional) : </label>
+                    <input type="text" name="referral" id="referral" class="form-control" placeholder="Tulis Nama Pegawai yang Kamu Kenal">
                 </div> 
 
                 <div class="form-group col-md-6 mb-3">

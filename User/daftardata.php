@@ -27,7 +27,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daftar Data</title>
+    <title>Daftar Data PKL</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/logo.ico" type="image/ico">
@@ -49,14 +49,14 @@
             <h4>Navigasi</h4>
             <a href="dashboard.php" >Dashboard</a>
             <a href="tambah.php">Daftar PKL</a>
-            <a href="" class="active">Hasil</a>
+            <a href="" class="active">List Data</a>
             <a href="../akun/logout.php">Logout</a>
         </div>
     </div>
 
     <!-- Page Content -->
     <div class="main text-justify">
-        <h3 class="font-weight-bold">Daftar Mahasiswa</h3>
+        <h3 class="font-weight-bold">Daftar Data PKL</h3>
         <br>
 
         <!-- Search form -->

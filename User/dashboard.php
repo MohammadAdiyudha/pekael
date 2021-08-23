@@ -37,7 +37,7 @@
             <h4>Navigasi</h4>
             <a href="" class="active">Dashboard</a>
             <a href="tambah.php">Daftar PKL</a>
-            <a href="daftardata.php">Hasil</a>
+            <a href="daftardata.php">List Data</a>
             <a href="../akun/logout.php">Logout</a>
         </div>
     </div>
@@ -62,7 +62,7 @@
                 <li>Tertolak&emsp;&emsp;&emsp;&nbsp;: berarti data sudah melalui tahap pemantauan admin dan data dianggap TIDAK VALID (Mohon untuk ubah atau hapus data)</li>
             </ol>
         </p>
-        <p>Sekian, dan terima kasih, semoga anda dapat diterima di universitas kami.</p>
+        <p>Sekian, dan terima kasih, semoga anda dapat diterima di perusahaan kami.</p>
         
     </div>
 

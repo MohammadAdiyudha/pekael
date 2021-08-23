@@ -67,7 +67,7 @@
             <h4>Navigasi</h4>
             <a href="dashboard.php">Dashboard</a>
             <a href="tambah.php">Daftar PKL</a>
-            <a href="daftardata.php">Hasil</a>
+            <a href="daftardata.php">List Data</a>
             <a href="../akun/logout.php">Logout</a>
         </div>
     </div>
@@ -108,7 +108,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6 mb-3">
                     <label for="referral">Referral : </label>
-                    <input type="text" name="referral" id="referral" class="form-control" required value="<?= $aju["referral"];?>">
+                    <input type="text" name="referral" id="referral" class="form-control" placeholder="Tulis Nama Pegawai yang Kamu Kenal"  value="<?= $aju["referral"];?>">
                 </div> 
 
                 <div class="form-group col-md-6 mb-3">
