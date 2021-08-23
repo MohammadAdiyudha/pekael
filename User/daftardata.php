@@ -27,7 +27,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daftar Data PKL</title>
+    <title>List Data PKL</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/logo.ico" type="image/ico">
@@ -58,7 +58,7 @@
 
     <!-- Page Content -->
     <div class="main text-justify">
-        <h3 class="font-weight-bold">Daftar Data PKL</h3>
+        <h3 class="font-weight-bold">List Data PKL</h3>
         <br>
 
         <table id="table_id" class="table table-hover table-bordered">

@@ -35,7 +35,7 @@
         <div class="sidetext">
             <h4>Navigasi</h4>
             <a href="" class="active">Dashboard</a>
-            <a href="daftardata.php">Daftar Data</a>
+            <a href="daftardata.php">List Data</a>
             <a href="../akun/logout.php">Logout</a>
         </div>
     </div>
@@ -46,11 +46,11 @@
         <br>
         <p>Selamat Datang Admin</p>
         
-        <p>Silakan melakukan pemantauan data yang bisa dilihat pada menu Daftar Data pada Navigasi Bar sebelah kiri, untuk konfirmasi kevalidan data,
+        <p>Silakan melakukan pemantauan data yang bisa dilihat pada menu List Data pada Navigasi Bar sebelah kiri, untuk konfirmasi kevalidan data,
             gunakan 2 pilihan dalam Tabel Daftar Data PKL kolom Aksi
         </p>
         <p>
-            Terdapat 3 Status dalam kolom status tabel Daftar Mahasiswa :
+            Terdapat 3 Status dalam kolom status tabel List Data PKL :
             <ol>
                 <li>Menunggu&emsp;&emsp;: berarti dalam tahap pemantauan data oleh admin</li>
                 <li>Terkonfirmasi&emsp;: berarti data sudah melalui tahap pemantauan admin dan data dianggap VALID</li>
