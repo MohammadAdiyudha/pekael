@@ -101,11 +101,14 @@
             if ($_FILES["surat"]['error'] === 4) {
                 $surat = $suratLama;
             } else {
+                $lokasifile = "../file/" . $suratLama;
+                // Hapus File Lama
+                unlink($lokasifile);
                 $surat = self::upload();
             }
-
+            
             // Query Ubah data
-            $query = "UPDATE mahasiswa SET
+            $query = "UPDATE pengaju SET
                         nama = '$nama',
                         tgl_mulai = '$tgl_mulai',
                         tgl_selesai = '$tgl_selesai',
