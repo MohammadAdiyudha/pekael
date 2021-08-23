@@ -28,9 +28,11 @@
 <html lang="en">
 <head>
     <title>Daftar Data PKL</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/logo.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -59,58 +61,55 @@
         <h3 class="font-weight-bold">Daftar Data PKL</h3>
         <br>
 
-        <!-- Search form -->
-        <form action="" method="post">
-            <!-- Size untuk memperlebar kolom -->
-            <!-- autofocus untuk auto active saat page load -->
-            <!-- autocomplete="off" untuk menghilangkan rekomendasi history pencarian -->
-            <div class="input-group mb-3">
-                <input type="text" name="keyword" class="form-control" size="40" autofocus
-                placeholder="Masukkan keyword pencarian . ." autocomplete="off"> 
-                <div class="input-group-append">
-                    <button type="submit" name="cari" class="btn btn-dark">Cari</button>
-                </div>
-            </div>
-        </form>
-
-        <table class="table table-hover table-bordered">
-            
-            <tr class="thead-dark text-center">
-                <th class="align-middle">No.</th>
-                <th class="align-middle">Aksi</th>
-                <th class="align-middle">Nama</th>
-                <th class="align-middle">Mulai</th>
-                <th class="align-middle">Selesai</th>
-                <th class="align-middle">Pendidikan</th>
-                <th class="align-middle">Referral</th>
-                <th class="align-middle">Status</th>
-            </tr>
-
-
-            <!-- Agar No. tetap urut, definisikan variable baru -->
-            <?php $i = 1; ?> 
-            <?php foreach($mahasiswa as $row) : ?>
-                <tr>
-                    <td class="text-center align-middle"><?= $i ?></td>
-                    <td class="align-middle">
-                        <a href="../user/ubah.php?id=<?= $row["id"];?>">ubah</a>  
-                            <hr>
-                        <a href="hapus.php?id=<?= $row["id"];?>"onclick="return confirm('Yakin?');">hapus
-                    </td>
-                    <td class="align-middle"><?= $row["nama"]; ?></td>
-                    <td class="align-middle"><?= $row["tgl_mulai"]; ?></td>
-                    <td class="align-middle"><?= $row["tgl_selesai"]; ?></td>
-                    <td class="align-middle"><?= $row["pendidikan"]; ?></td>
-                    <td class="align-middle"><?= $row["referral"]; ?></td>
-                    <td class="align-middle"><?= $row["status"]; ?></td>
+        <table id="table_id" class="table table-hover table-bordered">
+            <thead>
+                <tr class="thead-dark text-center">
+                    <th class="align-middle">No.</th>
+                    <th class="align-middle">Aksi</th>
+                    <th class="align-middle">Nama</th>
+                    <th class="align-middle">Mulai</th>
+                    <th class="align-middle">Selesai</th>
+                    <th class="align-middle">Pendidikan</th>
+                    <th class="align-middle">Referral</th>
+                    <th class="align-middle">Status</th>
                 </tr>
-            <!-- Agar variable i bertambah saat selesai while -->
-            <?php $i++; ?>
-            <?php endforeach; ?>
+            </thead>
 
+
+            <tbody>
+                <!-- Agar No. tetap urut, definisikan variable baru -->
+                <?php $i = 1; ?> 
+                <?php foreach($mahasiswa as $row) : ?>
+                    <tr>
+                        <td class="text-center align-middle"><?= $i ?></td>
+                        <td class="align-middle">
+                            <a href="../user/ubah.php?id=<?= $row["id"];?>">ubah</a>  
+                                <hr>
+                            <a href="hapus.php?id=<?= $row["id"];?>"onclick="return confirm('Yakin?');">hapus
+                        </td>
+                        <td class="align-middle"><?= $row["nama"]; ?></td>
+                        <td class="align-middle"><?= $row["tgl_mulai"]; ?></td>
+                        <td class="align-middle"><?= $row["tgl_selesai"]; ?></td>
+                        <td class="align-middle"><?= $row["pendidikan"]; ?></td>
+                        <td class="align-middle"><?= $row["referral"]; ?></td>
+                        <td class="align-middle"><?= $row["status"]; ?></td>
+                    </tr>
+                <!-- Agar variable i bertambah saat selesai while -->
+                <?php $i++; ?>
+                <?php endforeach; ?>
+            </tbody>
         </table>
     </div>
-    
 
+    <!-- Pemanggilan JavaScript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script>
 </body>
 </html>
