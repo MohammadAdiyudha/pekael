@@ -79,7 +79,7 @@
                 <?php foreach($mahasiswa as $row) : ?>
                     <tr>
                         <td class="text-center align-middle"><?= $i ?></td>
-                        <td class="align-middle">
+                        <td class="align-middle text-center">
                             <a href="konfirmasi.php?id=<?= $row["id"];?>">Konfirmasi</a> 
                                 <hr>
                             <a href="tolak.php?id=<?= $row["id"];?>">Tolak</a>
@@ -103,7 +103,7 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-
+    
     <script>
         $(document).ready( function () {
             $('#table_id').DataTable();
