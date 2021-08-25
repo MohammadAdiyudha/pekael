@@ -27,38 +27,6 @@ class tampildata extends config {
         return parent::query($q);
     }
 
-
-    //  FUNGSI CARI
-    public function cariuser($keyword) {
-        // Query tampil data dengan keyword tertentu
-        $namaakun = $_SESSION["username"];
-        $query = "SELECT*FROM pengaju
-                    WHERE username='$namaakun' AND
-                    (nama LIKE '%$keyword%' OR
-                    tgl_mulai LIKE '%$keyword%' OR
-                    tgl_selesai LIKE '%$keyword%' OR
-                    pendidikan LIKE '%$keyword%' OR
-                    referral LIKE '%$keyword%' OR
-                    statusdata LIKE '%$keyword%') 
-                ";
-
-        return self::parentquery($query); // Memanggil fungsi query paling atas dengan parameter variabel query diatas ini
-    }
-
-    public function cariadmin($keyword) {
-        // Query tampil data dengan keyword tertentu
-        $query = "SELECT*FROM pengaju
-                    WHERE
-                    nama LIKE '%$keyword%' OR
-                    tgl_mulai LIKE '%$keyword%' OR
-                    tgl_selesai LIKE '%$keyword%' OR
-                    pendidikan LIKE '%$keyword%' OR
-                    referral LIKE '%$keyword%' OR
-                    statusdata LIKE '%$keyword%'
-                ";
-
-        return self::parentquery($query); // Memanggil fungsi query paling atas dengan parameter variabel query diatas ini
-    }
 }
 
 
