@@ -14,13 +14,6 @@
         header("Location: ../admin/dashboard.php");
         exit;
     }
-
-    
-    // Jika Tombol cari diklik
-    // Gunakan _POST karena method search menggunakan post
-    if (isset ($_POST["cari"])) {
-        $mahasiswa = $con->cariuser($_POST["keyword"]);
-    }
 ?>
 
 

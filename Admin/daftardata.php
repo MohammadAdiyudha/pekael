@@ -15,11 +15,6 @@
         exit;
     }
 
-    // Jika Tombol cari diklik
-    // Gunakan _POST karena method search menggunakan post
-    if (isset ($_POST["cari"])) {
-        $mahasiswa = $con->cariadmin($_POST["keyword"]);
-    }
 ?>
 
 
