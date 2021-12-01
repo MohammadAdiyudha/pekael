@@ -51,7 +51,7 @@
         <p>Web ini merupakan web pendaftaran Praktek Kerja Lapangan di Plasa Telkom Cilacap.</p>
         <p>Untuk melakukan pendaftaran PKL, silakan tekan "Daftar PKL" pada navigasi bar sebelah kiri,
             pendaftaran banyak data bisa dilakukan oleh satu akun, guna mempermudah instansi pendidikan membantu siswa / mahasiswanya. 
-            Apabila sudah melakukan pendaftaran, anda bisa mengecek dan mengubah pada pilihan "Hasil" di navigasi bar sebelah kiri,
+            Apabila sudah melakukan pendaftaran, anda bisa mengecek dan mengubah pada pilihan "List Data" di navigasi bar sebelah kiri,
             anda juga bisa menghapus data yang sudah dimasukan dengan pilihan hapus pada tabel daftar mahasiswa kolom aksi.
         </p>
         <p>
